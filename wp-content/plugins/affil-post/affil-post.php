@@ -63,6 +63,9 @@ function custom_post_type()
 		'publicly_queryable'    => true,
 		'rewrite'               => $rewrite,
 		'capability_type'       => 'page',
+		'show_in_graphql'		=> true,
+		'graphql_single_name'	=> 'affilPost',
+		'graphql_plural_name'	=> 'affilPosts',
 	);
 	register_post_type( 'a_post', $args );
 }
